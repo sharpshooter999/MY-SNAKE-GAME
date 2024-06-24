@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background:url("Snake\ Minimalism\ Art\ wallpaper\ 1680x1050\ 9613.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#HIGHscoreBox{
+    position: absolute;
+    top:59px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#board{
+    background: linear-gradient(rgb(130, 243, 130),rgb(230, 230, 129));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(red,yellow);
+    border: .25vmin solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.snake{
+    background-color:yellow;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background-color:red;
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
